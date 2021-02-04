@@ -1,0 +1,6 @@
+1) crear la imagen desde el proyecto:
+mvn spring-boot:build-image
+2) Iniciar el container a partir de la imagen creada:
+docker run --tty --publish 8090:8090 bundle-products:0.0.1-SNAPSHOT
+3) generar el tag de la imagen docker:
+docker tag bundle-products:0.0.1-SNAPSHOT whuera/bundle-products:0.0.1-SNAPSHOT
