@@ -15,7 +15,6 @@ import java.util.Date;
 @AllArgsConstructor
 @Data
 public class User {
-    public User(){}
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
