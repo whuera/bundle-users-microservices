@@ -46,4 +46,10 @@ public class User {
     @Column(name = "updated_by")
     @LastModifiedBy
     private String updatedBy;
+
+    @Column(name = "image_url")
+    private String imageUrl;
+
+    @OneToOne
+    private UserBasicData userBasicData;
 }
