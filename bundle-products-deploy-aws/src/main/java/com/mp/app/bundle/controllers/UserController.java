@@ -1,11 +1,12 @@
-package com.app.users.bundleusersmicroservices.controller;
+package com.mp.app.bundle.controllers;
 
-import com.app.users.bundleusersmicroservices.models.User;
-import com.app.users.bundleusersmicroservices.service.IUserService;
+
+import com.mp.app.bundle.models.User;
+import com.mp.app.bundle.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import javax.validation.Valid;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController

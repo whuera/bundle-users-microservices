@@ -1,4 +1,4 @@
-package com.app.users.bundleusersmicroservices.models;
+package com.mp.app.bundle.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -6,6 +6,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.LastModifiedBy;
+
 
 import javax.persistence.*;
 import java.util.Date;

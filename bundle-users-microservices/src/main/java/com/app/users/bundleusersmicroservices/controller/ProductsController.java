@@ -1,7 +1,7 @@
-package com.mp.app.bundle.controllers;
+package com.app.users.bundleusersmicroservices.controller;
 
-import com.mp.app.bundle.models.Products;
-import com.mp.app.bundle.service.IProductService;
+import com.app.users.bundleusersmicroservices.models.Products;
+import com.app.users.bundleusersmicroservices.service.IProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,20 +13,8 @@ import java.util.List;
 @RequestMapping("/api/products")
 @CrossOrigin("*")
 public class ProductsController {
-
     @Autowired
     IProductService productService;
-
-    @GetMapping
-    public String applicationstatus(){
-        return "Application is up running";
-    }
-
-    @GetMapping("/{name}")
-    public String welcome(@PathVariable String name){
-        return "Hola Bienvenido: "+name;
-    }
-
     @GetMapping("/all")
     public List<Products> getAll(){
         return productService.getAll();
@@ -54,5 +42,4 @@ public class ProductsController {
 
         return new ResponseEntity<Products>(products, HttpStatus.OK);
     }
-
 }
